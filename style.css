@@ -1,3 +1,9 @@
+
+
+.navbar {
+    margin-right: 0;
+}
+
 .artist-name {
     text-transform: uppercase;
 }

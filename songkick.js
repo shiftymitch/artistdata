@@ -103,6 +103,15 @@ $(document).ready(function() {
         }).then(function(response) {
     
             let gigs = response.resultsPage.results.event;
+            let gigsTotal = response.resultsPage.totalEntries;
+
+            if (gigsTotal === 0) {
+                let gigsBox = $("#upcoming-shows");
+                let noGigsBox = $("<h4>").addClass("noGigs").text("None...");
+                noGigsBox.addClass("text-center")
+                gigsBox.append(noGigsBox);
+                gigsBox.append("<br>");
+            } else {
     
             for (var i = 0; i < gigs.length; i++) {
                     let gigsBox = $("#upcoming-shows");
@@ -122,6 +131,7 @@ $(document).ready(function() {
                     gigsBox.append(gig);
     
             }
+        }
     
         }).catch()
     }
