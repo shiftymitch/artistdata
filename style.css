@@ -1,3 +1,11 @@
 .artist-name {
     text-transform: uppercase;
 }
+
+.upcoming-shows {
+    color: purple;
+}
+
+.gig-history {
+    color: darkred;
+}
