@@ -1,0 +1,17 @@
+
+
+.navbar {
+    margin-right: 0;
+}
+
+.artist-name {
+    text-transform: uppercase;
+}
+
+.upcoming-shows {
+    color: purple;
+}
+
+.gig-history {
+    color: darkred;
+}
